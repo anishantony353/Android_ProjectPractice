@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="top">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="AsyncTaskLoader"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/BT_initLoader_ASL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Init Loader"
+        android:textSize="@dimen/dimen_20sp"
+        android:padding="10dp"
+        android:layout_margin="10sp"/>
+    <Button
+        android:id="@+id/BT_restartLoader_ASL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rstrt Loader"
+        android:textSize="@dimen/dimen_20sp"
+        android:padding="10dp"
+        android:layout_margin="10sp"/>
+
+    <Button
+        android:id="@+id/BT_destroyLoader_ASL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Destroy Loader"
+        android:textSize="@dimen/dimen_20sp"
+        android:padding="10dp"
+        android:layout_margin="10sp"/>
+
+    <TextView
+        android:id="@+id/TV_ASL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="text"
+        android:textStyle="bold|italic"
+        android:textSize="25sp"/>
+
+    <!--<ListView-->
+        <!--android:id="@+id/LV_contacts"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+
+</LinearLayout>
