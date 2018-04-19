@@ -39,7 +39,7 @@
         android:text="Destroy Loader"
         android:textSize="@dimen/dimen_20sp"
         android:padding="10dp"
-        android:layout_margin="10sp"/>
+        android:layout_margin="9sp"/>
     <ListView
         android:id="@+id/LV_contacts"
         android:layout_width="match_parent"
