@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <EditText
+        android:id="@+id/ET_fragDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit text"/>
+    <TextView
+        android:layout_below="@+id/ET_fragDialog"
+        android:id="@+id/TV_fragDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Did u like the Dialog ?"/>
+
+    <Button
+        android:id="@+id/BT_fragDialog_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:layout_below="@+id/TV_fragDialog"/>
+    <Button
+        android:id="@+id/BT_fragDialog_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:layout_below="@+id/TV_fragDialog"
+        android:layout_toRightOf="@+id/BT_fragDialog_no"/>
+</RelativeLayout>

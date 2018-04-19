@@ -1,0 +1,19 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/BT_activityDialogFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Dialog"
+        android:onClick="showDialogOnActivy"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/Container_dialogFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/BT_activityDialogFragment"></LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.anish.practice">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.USE_SIP" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+
+    <uses-feature
+        android:name="android.hardware.sip.voip"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="true" />
+
+    <application
+        android:name=".utility.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Cron" />
+
+        <service android:name=".services.CronService" />
+
+        <receiver
+            android:name=".receiver.CronReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="receiver" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".CronActivity2" />
+        <activity android:name=".GlideMainActivity" />
+        <activity android:name=".app_FileStorage.InternalStorage" />
+        <activity android:name=".app_FileStorage.GetDataFromInternalStorage" />
+        <activity android:name=".app_Fragments.MainActivity_Fragment" />
+        <activity android:name=".app_Fragments.Another_Activity" />
+        <activity android:name=".app_Fragments.Transaction" />
+        <activity android:name=".app_Fragments.interfaces.MainActivity_ListFragment" />
+        <activity android:name=".app_Fragments.Dialog" />
+        <activity android:name=".app_Fragments.MainActivity_ViewPager" />
+        <activity android:name=".app_Threads.MainActivity_Threads" />
+        <activity android:name=".app_MaterialDesign.MainActivity_MaterialDesign" />
+        <activity android:name=".app_RecyclerView.MainActivity_RecyclerView" />
+        <activity android:name=".app_Fragments.MainActivity_NavigationDrawer" />
+        <activity android:name=".app_Storage.internal.Main_InternalStorage" />
+        <activity android:name=".app_Services.MainActivity_Services" />
+
+        <service android:name=".app_Services.services.NormalService" />
+        <service android:name=".app_Services.services.BoundedService" />
+
+        <activity android:name=".app_Services.MainActivity_AIDL" />
+        <activity android:name=".app_Services.MainActivity_Messenger" />
+        <activity android:name=".app_BroadcastReceivers.MainActivity_SendBroadcast" />
+
+        <receiver
+            android:name=".app_BroadcastReceivers.receivers.Receiver1"
+            android:exported="false">
+            <intent-filter android:priority="3">
+                <action android:name="com.example.anish.practice.app_BroadcastReceivers.receivers.Receiver" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".app_BroadcastReceivers.receivers.Receiver2"
+            android:exported="false">
+            <intent-filter android:priority="2">
+                <action android:name="com.example.anish.practice.app_BroadcastReceivers.receivers.Receiver" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".app_BroadcastReceivers.receivers.Receiver3"
+            android:exported="false">
+            <intent-filter android:priority="1">
+                <action android:name="com.example.anish.practice.app_BroadcastReceivers.receivers.Receiver" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".app_ContentProvider.MainActivity_Contacts" />
+        <activity android:name=".app_SqLite.MainActivity_database" />
+        <activity android:name=".app_Threads.NextActivity" />
+        <activity android:name=".app_payUmoney.MainActivity_payUmoney" />
+        <activity android:name=".app_MemoryLeak.MainActivity_Leak" />
+        <activity android:name=".app_Retrofit.MainActivity_Retrofit" />
+        <activity android:name=".MainActivity_Practice">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".app_Resources.Main_9Patch" />
+        <activity android:name=".app_Services.Main_ForegroundService" />
+
+        <service
+            android:name=".app_Services.services.ForegroundService"
+            android:process=":notifyProcess" />
+
+        <activity android:name=".app_Voip.WalkieTalkieActivity" />
+
+        <receiver
+            android:name=".app_Voip.receivers.IncomingCallReceiver"
+            android:label="Call Receiver" />
+
+        <activity android:name=".app_ContentProviders.Main_ContentProviders" />
+        <activity android:name=".app_Loaders.CursorLoader_MainActivity" />
+        <activity android:name=".app_Loaders.AsyncTaskLoader_MainActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Practice</string>
+    <string-array name="title">
+        <item>Akeeb</item>
+        <item>Anish</item>
+        <item>Chandan</item>
+        <item>Humayun</item>
+        <item>Rajendra</item>
+        <item>Roshan</item>
+        <item>Yogesh</item>
+        <item>yuvraj</item>
+        <item>Shivram</item>
+        <item>acd</item>
+        <item>poli</item>
+        <item>djdg</item>
+        <item>Akeeb</item>
+        <item>Anish</item>
+        <item>Chandan</item>
+        <item>Humayun</item>
+        <item>Rajendra</item>
+        <item>Roshan</item>
+        <item>Yogesh</item>
+        <item>yuvraj</item>
+        <item>Shivram</item>
+        <item>acd</item>
+        <item>poli</item>
+        <item>djdg</item>
+    </string-array>
+
+    <string-array name="desc">
+        <item>Senior Software Enginner.Smart,Lazy</item>
+        <item>Smartest Guy in Saar It Resources</item>
+        <item>One man army for GIS</item>
+        <item>Chup Chup ke</item>
+        <item>Never Responds</item>
+        <item>Nail Biter</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="modules">
+        <item>PayUmoney</item>
+        <item>Fragment Transaction</item>
+        <item>Fragment ViewPager</item>
+        <item>Fragment NavigationDrawer</item>
+        <item>App Resources</item>
+        <item>Retrofit</item>
+        <item>Foreground Service</item>
+        <item>Voip</item>
+        <item>Content Providers</item>
+        <item>Loaders</item>
+
+    </string-array>
+</resources>

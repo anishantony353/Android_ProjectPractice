@@ -1,0 +1,22 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal">
+
+    <fragment
+        android:tag="fragA"
+        android:id="@+id/fragmentA"
+        android:name="com.example.anish.practice.app_Fragments.fragments.Fragment_A"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+    <fragment
+        android:tag="fragB"
+        android:id="@+id/fragmentB"
+        android:name="com.example.anish.practice.app_Fragments.fragments.Fragment_B"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+</LinearLayout>

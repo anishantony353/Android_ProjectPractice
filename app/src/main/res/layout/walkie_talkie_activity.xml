@@ -1,0 +1,33 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/BT_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Call"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/BT_receive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="receive"
+        android:textSize="20dp"
+        android:layout_below="@+id/BT_call"/>
+
+    <TextView
+        android:id="@+id/TV_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Some Text..."
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_below="@+id/BT_receive"/>
+
+</RelativeLayout>

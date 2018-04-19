@@ -1,0 +1,32 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <TextView
+        android:id="@+id/TV_CP_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:text="ktrf"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"/>
+    <EditText
+        android:id="@+id/ET_rawContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="Enter Raw contact"
+        android:layout_below="@+id/TV_CP_msg"/>
+    <Button
+        android:id="@+id/BT_submitRawContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Raw Contact"
+        android:layout_below="@+id/ET_rawContact"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

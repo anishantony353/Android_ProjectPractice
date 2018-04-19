@@ -1,0 +1,58 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button
+        android:id="@+id/BT_addC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add C"
+        android:onClick="addC"/>
+    <Button
+        android:id="@+id/BT_addD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add D"
+        android:layout_toRightOf="@+id/BT_addC"
+        android:onClick="addD"/>
+    <Button
+        android:id="@+id/BT_detachD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="detach D"
+        android:layout_toRightOf="@+id/BT_addC"
+        android:layout_below="@+id/BT_addC"
+        android:layout_alignParentLeft="true"
+        android:onClick="detachD"/>
+    <Button
+        android:id="@+id/BT_attachC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="attch C"
+        android:layout_toRightOf="@+id/BT_addC"
+        android:layout_below="@+id/BT_addC"
+        android:onClick="attachC"/>
+    <Button
+        android:id="@+id/BT_detachC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="detach C"
+
+        android:layout_below="@+id/BT_attachC"
+        android:onClick="detachC"/>
+    <Button
+        android:id="@+id/BT_pop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pop"
+        android:layout_below="@+id/BT_attachC"
+        android:layout_toRightOf="@+id/BT_detachC"
+        android:onClick="pop"/>
+    <LinearLayout
+        android:layout_below="@+id/BT_detachC"
+        android:id="@+id/frag_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"/>
+
+</RelativeLayout>
