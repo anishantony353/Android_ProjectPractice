@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:text="Destroy Loader"
         android:textSize="@dimen/dimen_20sp"
-        android:padding="7dp"
+        android:padding="6dp"
         android:layout_margin="9sp"/>
     <ListView
         android:id="@+id/LV_contacts"
