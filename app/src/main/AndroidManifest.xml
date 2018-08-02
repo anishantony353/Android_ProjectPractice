@@ -124,7 +124,8 @@
 
         <activity android:name=".app_ContentProviders.Main_ContentProviders" />
         <activity android:name=".app_Loaders.CursorLoader_MainActivity" />
-        <activity android:name=".app_Loaders.AsyncTaskLoader_MainActivity"></activity>
+        <activity android:name=".app_Loaders.AsyncTaskLoader_MainActivity" />
+        <activity android:name=".app_DynamicViews.MainActivity_DynamicViews"></activity>
     </application>
 
 </manifest>

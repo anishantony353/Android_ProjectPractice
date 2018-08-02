@@ -25,6 +25,8 @@ import java.util.List;
 
 public class Utility {
 
+    private static boolean isLogOn = true;
+
     static public ProgressDialog progressDialog;
 
     public static String app_url = "http://172.17.47.173/android.directions/";  // http://172.17.46.54/android.survey.tracker/  ...http://103.233.79.142:90/android.survey.tracker/
@@ -104,6 +106,12 @@ public class Utility {
     public static void dismissDialog(){
         if(progressDialog.isShowing()){
             progressDialog.dismiss();
+        }
+    }
+
+    public static void log(String TAG,String msg){
+        if(isLogOn){
+            Log.i(TAG,msg);
         }
     }
 

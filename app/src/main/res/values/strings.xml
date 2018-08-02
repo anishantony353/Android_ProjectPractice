@@ -50,6 +50,7 @@
         <item>Voip</item>
         <item>Content Providers</item>
         <item>Loaders</item>
+        <item>Dynamic Views</item>
 
     </string-array>
 </resources>

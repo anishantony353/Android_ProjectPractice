@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.anish.practice.app_ContentProviders.Main_ContentProviders;
+import com.example.anish.practice.app_DynamicViews.MainActivity_DynamicViews;
 import com.example.anish.practice.app_Fragments.MainActivity_NavigationDrawer;
 import com.example.anish.practice.app_Fragments.MainActivity_ViewPager;
 import com.example.anish.practice.app_Fragments.Transaction;
@@ -89,6 +90,11 @@ public class MainActivity_Practice extends AppCompatActivity implements AdapterV
 
             case 9:
                 intent = new Intent(this, AsyncTaskLoader_MainActivity.class);
+                startActivity(intent);
+                break;
+
+            case 10:
+                intent = new Intent(this, MainActivity_DynamicViews.class);
                 startActivity(intent);
                 break;
 
